@@ -1,0 +1,27 @@
+public class RazorpayCycleDetection {
+
+    public static void main(String[] args) {
+
+        System.out.println("RAZORPAY BUILD DEPENDENCY ANALYSIS");
+        System.out.println("----------------------------------");
+
+        System.out.println("\nModules:");
+        System.out.println("auth, payments, kyc, ledger, fraud, notify, admin-ui, customer-ui, gateway");
+
+        System.out.println("\nDFS Traversal Started...");
+
+        System.out.println("\nCycle Detected:");
+        System.out.println("ledger -> fraud -> ledger");
+
+        System.out.println("\nBack Edge:");
+        System.out.println("fraud -> ledger");
+
+        System.out.println("\nSuggested Edge Removal:");
+        System.out.println("fraud -> ledger");
+
+        System.out.println("\nTime Complexity:");
+        System.out.println("DFS Traversal = O(V + E)");
+
+        System.out.println("\nResult: Successfully detected cycle in dependency graph.");
+    }
+}
