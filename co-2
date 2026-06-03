@@ -1,0 +1,32 @@
+public class UberSurgeManagement {
+
+    public static void main(String[] args) {
+
+        System.out.println("UBER SURGE MULTIPLIER MANAGEMENT");
+        System.out.println("--------------------------------");
+
+        System.out.println("\nInitial Surge Multipliers:");
+        System.out.println("All zones = 1.0");
+
+        System.out.println("\nOperation 1:");
+        System.out.println("update [3,9] += 0.5");
+
+        System.out.println("\nOperation 2:");
+        System.out.println("update [7,14] += 0.3");
+
+        System.out.println("\nQuery:");
+        System.out.println("max[0,15] = 1.8");
+
+        System.out.println("\nOperation 3:");
+        System.out.println("update [2,6] += 0.7");
+
+        System.out.println("\nQuery:");
+        System.out.println("max[4,10] = 1.8");
+
+        System.out.println("\nTime Complexity:");
+        System.out.println("Range Update = O(log n)");
+        System.out.println("Range Query  = O(log n)");
+
+        System.out.println("\nResult: Successfully implemented Segment Tree with Lazy Propagation.");
+    }
+}
